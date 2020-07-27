@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build-sass": "node-sass src/style.scss src/style.css",
+    "watch-sass": "node-sass -w src/style.scss src/style.css"
+  },
+  "devDependencies": {
+    "node-sass": "4.14.1"
+  }
+}
