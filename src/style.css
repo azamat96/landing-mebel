@@ -805,6 +805,25 @@ footer {
   .room-zakaz-other {
     width: auto; } }
 
+.breadcrumb-custom {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0;
+  background-color: #fff;
+  margin-bottom: 45px; }
+  .breadcrumb-custom .breadcrumb-item {
+    padding-left: 14px; }
+    .breadcrumb-custom .breadcrumb-item.active {
+      color: #C4C4C4; }
+    .breadcrumb-custom .breadcrumb-item.breadcrumb-first-item:before {
+      content: none; }
+    .breadcrumb-custom .breadcrumb-item a {
+      color: #FA8B00; }
+    .breadcrumb-custom .breadcrumb-item:before {
+      color: #FA8B00;
+      content: ">";
+      padding-right: 14px; }
+
 /*---------------------------  COMMON STYLES END ------------------------------------------- */
 /* -------------------------   SECTION START - Bud v kurse -------------------------- */
 .sec-bud-v-kurse {
@@ -960,28 +979,10 @@ footer {
 /* ----------------------------   SECTION - MAIN MAGAZIN ------------------------------- */
 .sec-main-magazin {
   padding: 40px 0 120px 0; }
-  .sec-main-magazin .breadcrumb {
-    font-weight: 500;
-    font-size: 14px;
-    padding: 0;
-    background-color: #fff;
-    margin-bottom: 45px; }
-    .sec-main-magazin .breadcrumb .breadcrumb-item {
-      padding-left: 14px; }
-      .sec-main-magazin .breadcrumb .breadcrumb-item.active {
-        color: #C4C4C4; }
-      .sec-main-magazin .breadcrumb .breadcrumb-item.breadcrumb-first-item:before {
-        content: none; }
-      .sec-main-magazin .breadcrumb .breadcrumb-item a {
-        color: #FA8B00; }
-      .sec-main-magazin .breadcrumb .breadcrumb-item:before {
-        color: #FA8B00;
-        content: ">";
-        padding-right: 14px; }
-  .sec-main-magazin .room-zakaz:nth-child(1) {
+  .sec-main-magazin .room-zakaz-magazin:nth-child(1) {
     background-image: url("images/magazin2.png");
     margin-right: 40px; }
-  .sec-main-magazin .room-zakaz:nth-child(2) {
+  .sec-main-magazin .room-zakaz-magazin:nth-child(2) {
     background-image: url("images/magazin1.png");
     margin-right: 0; }
   @media (max-width: 767px) {
@@ -989,6 +990,8 @@ footer {
       padding: 30px 0 60px 0; }
       .sec-main-magazin .breadcrumb {
         margin-bottom: 40px; }
-      .sec-main-magazin .room-zakaz {
+      .sec-main-magazin .room-zakaz-magazin {
         margin-bottom: 30px;
         margin-right: 0; } }
+
+/* ----------------------------   SECTION - MAIN MEBEL ------------------------------- */

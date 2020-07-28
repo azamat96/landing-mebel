@@ -980,6 +980,32 @@ footer {
     width: auto;
   }
 }
+
+.breadcrumb-custom {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0;
+  background-color: #fff;
+  margin-bottom: 45px;
+
+  .breadcrumb-item {
+    padding-left: 14px;
+    &.active {
+      color: #C4C4C4;
+    }
+    &.breadcrumb-first-item:before {
+      content: none;
+    }
+    a {
+      color: $color-orange;
+    }
+    &:before {
+      color: $color-orange;
+      content: ">";
+      padding-right: 14px;
+    }
+  }
+}
 /*---------------------------  COMMON STYLES END ------------------------------------------- */
 
 
@@ -1179,36 +1205,11 @@ footer {
 .sec-main-magazin {
   padding: 40px 0 120px 0;
 
-  .breadcrumb {
-    font-weight: 500;
-    font-size: 14px;
-    padding: 0;
-    background-color: #fff;
-    margin-bottom: 45px;
-
-    .breadcrumb-item {
-      padding-left: 14px;
-      &.active {
-        color: #C4C4C4;
-      }
-      &.breadcrumb-first-item:before {
-        content: none;
-      }
-      a {
-        color: $color-orange;
-      }
-      &:before {
-        color: $color-orange;
-        content: ">";
-        padding-right: 14px;
-      }
-    }
-  }
-  .room-zakaz:nth-child(1) {
+  .room-zakaz-magazin:nth-child(1) {
     background-image: url("images/magazin2.png");
     margin-right: 40px;
   }
-  .room-zakaz:nth-child(2) {
+  .room-zakaz-magazin:nth-child(2) {
     background-image: url("images/magazin1.png");
     margin-right: 0;
   }
@@ -1218,9 +1219,11 @@ footer {
     .breadcrumb {
       margin-bottom: 40px;
     }
-    .room-zakaz {
+    .room-zakaz-magazin {
       margin-bottom: 30px;
       margin-right: 0;
     }
   }
 }
+
+/* ----------------------------   SECTION - MAIN MEBEL ------------------------------- */
