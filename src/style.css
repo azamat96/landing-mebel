@@ -824,6 +824,27 @@ footer {
       content: ">";
       padding-right: 14px; }
 
+.reason {
+  text-align: center;
+  width: 250px;
+  height: 229px;
+  position: relative;
+  padding: 58px 45px 50px 40px;
+  margin: 0 40px;
+  z-index: 1; }
+  .reason:before {
+    content: url("images/shape-2.png");
+    position: absolute;
+    left: -30px;
+    z-index: -1;
+    top: -23px; }
+  .reason img {
+    margin-bottom: 15px; }
+  @media (max-width: 767px) {
+    .reason {
+      margin: 0;
+      margin-bottom: 50px; } }
+
 /*---------------------------  COMMON STYLES END ------------------------------------------- */
 /* -------------------------   SECTION START - Bud v kurse -------------------------- */
 .sec-bud-v-kurse {
@@ -869,24 +890,10 @@ footer {
 /* -------------------------   SECTION START - Pachemu vibiraiut nas -------------------------- */
 .sec-pochemu-v-nas {
   padding: 60px 0 70px 0;
-  position: relative; }
+  position: relative;
+  background-color: #fff; }
   .sec-pochemu-v-nas .section-header {
     margin-bottom: 60px; }
-  .sec-pochemu-v-nas .reason {
-    text-align: center;
-    width: 250px;
-    height: 229px;
-    position: relative;
-    padding: 58px 45px 50px 20px;
-    margin: 0 40px; }
-    .sec-pochemu-v-nas .reason:before {
-      content: url("images/shape-2.png");
-      position: absolute;
-      left: -30px;
-      z-index: -1;
-      top: -23px; }
-    .sec-pochemu-v-nas .reason img {
-      margin-bottom: 15px; }
   .sec-pochemu-v-nas .img-up {
     position: absolute;
     width: 60px;
@@ -906,10 +913,7 @@ footer {
       .sec-pochemu-v-nas .section-header {
         font-size: 18px; }
       .sec-pochemu-v-nas .img-up {
-        display: none; }
-      .sec-pochemu-v-nas .reason {
-        margin: 0;
-        margin-bottom: 50px; } }
+        display: none; } }
 
 /* -------------------------   SECTION START - MEBEL-NA-ZAKAZ -------------------------- */
 .sec-mebel-na-zakaz {
@@ -994,4 +998,40 @@ footer {
         margin-bottom: 30px;
         margin-right: 0; } }
 
-/* ----------------------------   SECTION - MAIN MEBEL ------------------------------- */
+/* ----------------------------   SECTION - O NAS ------------------------------- */
+.sec-too-llc {
+  height: 672px;
+  background-image: url(images/o-nas-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: bottom;
+  background-color: #FAFAFA;
+  padding-top: 105px;
+  color: #fff;
+  text-align: center; }
+  .sec-too-llc .section-header {
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 80px; }
+  .sec-too-llc .o-nas-desc {
+    font-size: 20px;
+    line-height: 160%; }
+
+/* ----------------------------   SECTION - O NAS TEXTS ------------------------------- */
+.sec-o-nas-texts {
+  padding: 100px 0 120px 0; }
+  .sec-o-nas-texts .text-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .sec-o-nas-texts .text-body {
+    font-size: 16px;
+    margin-bottom: 50px; }
+
+/* ----------------------------   SECTION - DLYA UDOBSTVA ------------------------------- */
+.sec-dlya-udobstva {
+  padding: 60px 0 70px 0;
+  background-color: #fff; }
+  .sec-dlya-udobstva .section-header {
+    margin-bottom: 50px; }

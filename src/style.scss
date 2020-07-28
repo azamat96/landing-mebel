@@ -1006,6 +1006,31 @@ footer {
     }
   }
 }
+
+.reason {
+  text-align: center;
+  width: 250px;
+  height: 229px;
+  position: relative;
+  padding: 58px 45px 50px 40px;
+  margin: 0 40px;
+  z-index: 1;
+
+  &:before {
+    content: url("images/shape-2.png");
+    position: absolute;
+    left: -30px;
+    z-index: -1;
+    top: -23px;
+  }
+  img {
+    margin-bottom: 15px;
+  }
+  @media (max-width: $screen-size-medium) {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+}
 /*---------------------------  COMMON STYLES END ------------------------------------------- */
 
 
@@ -1065,27 +1090,10 @@ footer {
 .sec-pochemu-v-nas {
   padding: 60px 0 70px 0;
   position: relative;
+  background-color: #fff;
 
   .section-header {
     margin-bottom: 60px;
-  }
-  .reason {
-    text-align: center;
-    width: 250px;
-    height: 229px;
-    position: relative;
-    padding: 58px 45px 50px 20px;
-    margin: 0 40px;
-    &:before {
-      content: url("images/shape-2.png");
-      position: absolute;
-      left: -30px;
-      z-index: -1;
-      top: -23px;
-    }
-    img {
-      margin-bottom: 15px;
-    }
   }
   .img-up {
     position: absolute;
@@ -1109,10 +1117,6 @@ footer {
     }
     .img-up {
       display: none;
-    }
-    .reason {
-      margin: 0;
-      margin-bottom: 50px;
     }
   }
 }
@@ -1226,4 +1230,51 @@ footer {
   }
 }
 
-/* ----------------------------   SECTION - MAIN MEBEL ------------------------------- */
+/* ----------------------------   SECTION - O NAS ------------------------------- */
+.sec-too-llc {
+  height: 672px;
+  background-image: url(images/o-nas-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: bottom;
+  background-color: #FAFAFA;
+  padding-top: 105px;
+  color: #fff;
+  text-align: center;
+
+  .section-header {
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 80px;
+  }
+  .o-nas-desc {
+    font-size: 20px;
+    line-height: 160%;
+  }
+}
+
+/* ----------------------------   SECTION - O NAS TEXTS ------------------------------- */
+.sec-o-nas-texts {
+  padding: 100px 0 120px 0;
+
+  .text-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .text-body {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+}
+
+/* ----------------------------   SECTION - DLYA UDOBSTVA ------------------------------- */
+.sec-dlya-udobstva {
+  padding: 60px 0 70px 0;
+  background-color: #fff;
+
+  .section-header {
+    margin-bottom: 50px;
+  }
+}
