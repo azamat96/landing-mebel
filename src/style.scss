@@ -852,7 +852,7 @@ header {
 }
 /*Modal - Zayavka - end*/
 
-/* FOOTER - start */
+/* -------------------------   SECTION START - FOOTER - start -------------------------- */
 footer {
   padding: 70px 0 50px 0;
 
@@ -894,13 +894,13 @@ footer {
     }
   }
 }
-/* FOOTER - end */
 
 /*---------------------------   COMMON STYLES START------------------------------------------ */
 .section-header {
   text-transform: uppercase;
   text-align: center;
 }
+
 .zakaz-body-btn {
   color: #fff;
   padding: 8px 12px;
@@ -917,6 +917,67 @@ footer {
     right: 12px;
     z-index: 1;
     top: 9px;
+  }
+}
+.room-zakaz {
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  width: 270px;
+  height: 240px;
+  padding: 20px;
+  font-size: 20px;
+}
+.room-zakaz-big {
+  width: 392px;
+  height: 500px;
+  background-image: url("images/zakaz1.png");
+  padding: 25px 30px;
+  margin-right: 20px;
+}
+.zakaz-body {
+  h4 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+.room-zakaz-1 {
+  background-image: url("images/zakaz2.png");
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.room-zakaz-2 {
+  background-image: url("images/zakaz3.png");
+  margin-bottom: 20px;
+}
+.room-zakaz-3 {
+  background-image: url("images/zakaz4.png");
+  margin-right: 20px;
+}
+.room-zakaz-4 {
+  background-image: url("images/zakaz5.png");
+}
+.room-zakaz-other {
+  width: 560px;
+}
+@media (max-width: $screen-size-medium) {
+  .room-zakaz {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 15px;
+    margin-right: 0;
+    height: 295px;
+  }
+  .room-zakaz-big {
+    margin-right: 0;
+    height: 422px;
+  }
+  .room-zakaz-other {
+    width: auto;
   }
 }
 /*---------------------------  COMMON STYLES END ------------------------------------------- */
@@ -1038,49 +1099,6 @@ footer {
   .section-header {
     margin-bottom: 40px;
   }
-  .room-zakaz {
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
-    width: 270px;
-    height: 240px;
-    padding: 20px;
-    font-size: 20px;
-  }
-  .room-zakaz-big {
-    width: 392px;
-    height: 500px;
-    background-image: url("images/zakaz1.png");
-    padding: 25px 30px;
-    margin-right: 20px;
-  }
-  .zakaz-body {
-    h4 {
-      color: #fff;
-      margin-bottom: 10px;
-      font-size: 24px;
-      font-weight: 600;
-    }
-  }
-  .room-zakaz-1 {
-    background-image: url("images/zakaz2.png");
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
-  .room-zakaz-2 {
-    background-image: url("images/zakaz3.png");
-    margin-bottom: 20px;
-  }
-  .room-zakaz-3 {
-    background-image: url("images/zakaz4.png");
-    margin-right: 20px;
-  }
-  .room-zakaz-4 {
-    background-image: url("images/zakaz5.png");
-  }
-  .room-zakaz-other {
-    width: 560px;
-  }
   @media (max-width: $screen-size-medium) {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -1088,22 +1106,6 @@ footer {
     .section-header {
       font-size: 18px;
       margin-bottom: 30px;
-    }
-    .room-zakaz {
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: bottom;
-      margin-bottom: 15px;
-      margin-right: 0;
-      height: 295px;
-    }
-    .room-zakaz-big {
-      margin-right: 0;
-      height: 422px;
-    }
-    .room-zakaz-other {
-      width: auto;
     }
   }
 }
@@ -1173,3 +1175,52 @@ footer {
   }
 }
 
+/* ----------------------------   SECTION - MAIN MAGAZIN ------------------------------- */
+.sec-main-magazin {
+  padding: 40px 0 120px 0;
+
+  .breadcrumb {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
+    background-color: #fff;
+    margin-bottom: 45px;
+
+    .breadcrumb-item {
+      padding-left: 14px;
+      &.active {
+        color: #C4C4C4;
+      }
+      &.breadcrumb-first-item:before {
+        content: none;
+      }
+      a {
+        color: $color-orange;
+      }
+      &:before {
+        color: $color-orange;
+        content: ">";
+        padding-right: 14px;
+      }
+    }
+  }
+  .room-zakaz:nth-child(1) {
+    background-image: url("images/magazin2.png");
+    margin-right: 40px;
+  }
+  .room-zakaz:nth-child(2) {
+    background-image: url("images/magazin1.png");
+    margin-right: 0;
+  }
+  @media (max-width: $screen-size-medium) {
+    padding: 30px 0 60px 0;
+
+    .breadcrumb {
+      margin-bottom: 40px;
+    }
+    .room-zakaz {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+}
