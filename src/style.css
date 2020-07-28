@@ -64,21 +64,6 @@ button:focus {
   margin-right: 25px;
   position: relative; }
 
-.cart-red-count {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background: red;
-  width: calc(100% - 5px);
-  height: 18px;
-  text-align: center;
-  border-radius: 50%;
-  padding: 0 0px 0px 0px;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 18px;
-  color: #fff; }
-
 header {
   position: relative; }
 
@@ -112,7 +97,7 @@ header {
     font-weight: 500;
     font-size: 14px;
     color: #374759;
-    margin: 0 12px; }
+    margin: 0 20px; }
     .inner-white a:hover {
       color: #FA8B00;
       text-decoration: none; }
@@ -525,7 +510,7 @@ header {
 .dropdown:hover .dropdown-content {
   display: block; }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
   .a-second, .a-third, .a-four {
     margin-left: 0; }
   .about-us-item {
@@ -556,13 +541,10 @@ header {
   .partners-list {
     flex-direction: column; }
   .right-side {
-    display: flex; }
-  .cart-icon-block-mobile {
-    margin-right: 30px;
-    position: relative; } }
+    display: flex; } }
 
 /*--------------------------    Mobile Responsive Nav   ---------------------------------*/
-@media (max-width: 750px) {
+@media (max-width: 767px) {
   .inner-black {
     justify-content: center; }
   .inner-white-mobile {
@@ -571,7 +553,12 @@ header {
     justify-content: space-between;
     padding: 18px 0; }
   .inner-white-mobile img {
-    cursor: pointer; } }
+    cursor: pointer; }
+  .logo-m {
+    width: 50px;
+    height: 39px; }
+  .black-header {
+    padding: 7px 0; } }
 
 .overlay {
   height: 100%;
@@ -580,7 +567,7 @@ header {
   z-index: 100;
   top: 0;
   left: 0;
-  background-color: #1c2733;
+  background-color: #082B4E;
   /*background-color: rgba(0,0,0, 0.9);*/
   overflow-x: hidden;
   transition: 0.5s;
@@ -609,20 +596,28 @@ header {
 .overlay-content .search-input {
   margin: 15px auto 20px auto; }
 
+.mob-menu-logo {
+  font-size: 20px !important;
+  text-transform: uppercase;
+  margin-bottom: 40px; }
+
 .overlay a {
   text-decoration: none;
   color: #fff;
   display: block;
   transition: 0.3s;
   text-align: center;
-  margin-bottom: 20px;
-  font-weight: 500; }
+  font-weight: 500;
+  margin-bottom: 25px; }
+  .overlay a.active {
+    color: #FA8B00; }
 
 .border-line {
   background-color: #49525C;
   height: 1px;
-  margin-bottom: 20px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 50px; }
 
 .overlay a:hover, .overlay a:focus {
   color: #FA8B00; }
@@ -721,6 +716,16 @@ footer {
     color: #00458B;
     font-size: 12px;
     text-align: center; }
+  @media (max-width: 767px) {
+    footer {
+      padding-bottom: 25px; }
+      footer .footer-logo img {
+        width: 85px; }
+      footer .footer-main {
+        align-items: center;
+        margin-bottom: 50px; }
+      footer .footer-line {
+        margin-top: 50px; } }
 
 /* FOOTER - end */
 /*---------------------------   COMMON STYLES START------------------------------------------ */
@@ -728,8 +733,25 @@ footer {
   text-transform: uppercase;
   text-align: center; }
 
+.zakaz-body-btn {
+  color: #fff;
+  padding: 8px 12px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  position: relative;
+  padding-right: 50px; }
+  .zakaz-body-btn:after {
+    content: url("images/zakaz-right.png");
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 9px; }
+
 /*---------------------------  COMMON STYLES END ------------------------------------------- */
-/* Section - Bud v kurse */
+/* -------------------------   SECTION START - Bud v kurse -------------------------- */
 .sec-bud-v-kurse {
   background-color: #082B4E;
   padding: 120px 0;
@@ -758,8 +780,19 @@ footer {
       color: #fff;
       padding: 0 13px;
       cursor: pointer; }
+  @media (max-width: 767px) {
+    .sec-bud-v-kurse {
+      padding: 30px 0 40px 0; }
+      .sec-bud-v-kurse .section-header {
+        font-size: 20px;
+        margin-bottom: 10px; }
+      .sec-bud-v-kurse .bud-text {
+        font-size: 12px;
+        margin-bottom: 30px; }
+      .sec-bud-v-kurse .subscribe-input {
+        font-size: 12px; } }
 
-/* Section - Pachemu vibiraiut nas */
+/* -------------------------   SECTION START - Pachemu vibiraiut nas -------------------------- */
 .sec-pochemu-v-nas {
   padding: 60px 0 70px 0;
   position: relative; }
@@ -792,6 +825,17 @@ footer {
     bottom: 70px;
     right: 50px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); }
+  @media (max-width: 767px) {
+    .sec-pochemu-v-nas {
+      padding-top: 45px;
+      padding-bottom: 40px; }
+      .sec-pochemu-v-nas .section-header {
+        font-size: 18px; }
+      .sec-pochemu-v-nas .img-up {
+        display: none; }
+      .sec-pochemu-v-nas .reason {
+        margin: 0;
+        margin-bottom: 50px; } }
 
 /* -------------------------   SECTION START - MEBEL-NA-ZAKAZ -------------------------- */
 .sec-mebel-na-zakaz {
@@ -818,22 +862,6 @@ footer {
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: 600; }
-  .sec-mebel-na-zakaz .zakaz-body button {
-    color: #fff;
-    padding: 8px 12px;
-    background-color: transparent;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 4px;
-    font-size: 16px;
-    position: relative;
-    padding-right: 50px; }
-    .sec-mebel-na-zakaz .zakaz-body button:after {
-      content: url("images/zakaz-right.png");
-      position: absolute;
-      right: 12px;
-      z-index: 1;
-      top: 9px; }
   .sec-mebel-na-zakaz .room-zakaz-1 {
     background-image: url("images/zakaz2.png");
     margin-right: 20px;
@@ -848,3 +876,74 @@ footer {
     background-image: url("images/zakaz5.png"); }
   .sec-mebel-na-zakaz .room-zakaz-other {
     width: 560px; }
+  @media (max-width: 767px) {
+    .sec-mebel-na-zakaz {
+      padding-top: 90px;
+      padding-bottom: 90px; }
+      .sec-mebel-na-zakaz .section-header {
+        font-size: 18px;
+        margin-bottom: 30px; }
+      .sec-mebel-na-zakaz .room-zakaz {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        margin-bottom: 15px;
+        margin-right: 0;
+        height: 295px; }
+      .sec-mebel-na-zakaz .room-zakaz-big {
+        margin-right: 0;
+        height: 422px; }
+      .sec-mebel-na-zakaz .room-zakaz-other {
+        width: auto; } }
+
+/* ----------------------------   SECTION - MAIN SLIDER ------------------------------- */
+.sec-main-slider {
+  height: 540px;
+  background-image: url("images/main-slider.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: bottom;
+  background-color: #FAFAFA; }
+  .sec-main-slider .main-header {
+    color: #00458B;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 140px; }
+  .sec-main-slider .main-s-btn {
+    color: #00458B;
+    border-color: #00458B;
+    margin-bottom: 40px; }
+    .sec-main-slider .main-s-btn:after {
+      filter: invert(62%) sepia(81%) saturate(2151%) hue-rotate(240deg) brightness(73%) contrast(80%); }
+  .sec-main-slider .arrow-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer; }
+  .sec-main-slider .prev-btn {
+    background-color: #fff;
+    margin-right: 12px; }
+  .sec-main-slider .next-btn {
+    background-color: #00458B; }
+  .sec-main-slider .main-slider-block {
+    margin-top: 75px; }
+  @media (max-width: 767px) {
+    .sec-main-slider {
+      height: auto;
+      background-image: url("images/mobile-main-bg.png"); }
+      .sec-main-slider .main-header {
+        margin-top: 55px;
+        font-size: 30px;
+        margin-bottom: 15px; }
+      .sec-main-slider .main-s-btn {
+        margin-bottom: 30px; }
+      .sec-main-slider .main-slider-block {
+        margin-top: 50px;
+        margin-bottom: 50px; }
+        .sec-main-slider .main-slider-block img {
+          width: 100%; } }
