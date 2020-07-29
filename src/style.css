@@ -1017,6 +1017,18 @@ footer {
   .sec-too-llc .o-nas-desc {
     font-size: 20px;
     line-height: 160%; }
+  @media (max-width: 767px) {
+    .sec-too-llc {
+      padding-top: 60px;
+      height: auto;
+      padding-bottom: 45px;
+      background-image: url("images/mob-onas-bg.png"); }
+      .sec-too-llc .section-header {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 30px; }
+      .sec-too-llc .o-nas-desc {
+        font-size: 14px; } }
 
 /* ----------------------------   SECTION - O NAS TEXTS ------------------------------- */
 .sec-o-nas-texts {
@@ -1028,6 +1040,12 @@ footer {
   .sec-o-nas-texts .text-body {
     font-size: 16px;
     margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    .sec-o-nas-texts {
+      padding: 45px 0 90px 0; }
+      .sec-o-nas-texts .text-body {
+        font-size: 14px;
+        margin-bottom: 70px; } }
 
 /* ----------------------------   SECTION - DLYA UDOBSTVA ------------------------------- */
 .sec-dlya-udobstva {
@@ -1035,3 +1053,10 @@ footer {
   background-color: #fff; }
   .sec-dlya-udobstva .section-header {
     margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    .sec-dlya-udobstva {
+      padding: 45px 0 70px 0; }
+      .sec-dlya-udobstva .section-header {
+        margin-bottom: 60px;
+        font-size: 18px;
+        font-weight: bold; } }

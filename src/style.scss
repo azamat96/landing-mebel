@@ -1252,6 +1252,21 @@ footer {
     font-size: 20px;
     line-height: 160%;
   }
+  @media (max-width: $screen-size-medium) {
+    padding-top: 60px;
+    height: auto;
+    padding-bottom: 45px;
+    background-image: url("images/mob-onas-bg.png");
+
+    .section-header {
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    .o-nas-desc {
+      font-size: 14px;
+    }
+  }
 }
 
 /* ----------------------------   SECTION - O NAS TEXTS ------------------------------- */
@@ -1267,6 +1282,15 @@ footer {
     font-size: 16px;
     margin-bottom: 50px;
   }
+  @media (max-width: $screen-size-medium) {
+    padding: 45px 0 90px 0;
+
+    .text-body {
+      font-size: 14px;
+      margin-bottom: 70px;
+    }
+
+  }
 }
 
 /* ----------------------------   SECTION - DLYA UDOBSTVA ------------------------------- */
@@ -1276,5 +1300,16 @@ footer {
 
   .section-header {
     margin-bottom: 50px;
+  }
+  @media (max-width: $screen-size-medium) {
+    padding: 45px 0 70px 0;
+
+    .section-header {
+      margin-bottom: 60px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+
   }
 }
