@@ -1105,3 +1105,112 @@ footer {
         justify-content: center; }
       .sec-magazin-category .card {
         width: min-content; } }
+
+/* ----------------------------   SECTION - Magazin Inside ------------------------------- */
+.sec-magazine-inside {
+  padding: 40px 0 120px 0; }
+  .sec-magazine-inside .breadcrumb-custom {
+    background-color: #FAFAFA;
+    margin-bottom: 43px; }
+  .sec-magazine-inside .magazin-block {
+    background: #FFFFFF;
+    border: 0.5px solid #E0E0E0; }
+    .sec-magazine-inside .magazin-block .magazin-img {
+      margin: 20px; }
+    .sec-magazine-inside .magazin-block .magazin-desc {
+      border-left: 0.5px solid #E0E0E0;
+      width: 100%; }
+    .sec-magazine-inside .magazin-block .magazin-title {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 49px;
+      padding: 20px 25px;
+      border-bottom: 0.5px solid #E0E0E0; }
+    .sec-magazine-inside .magazin-block .price-block {
+      padding: 25px;
+      padding-bottom: 50px; }
+      .sec-magazine-inside .magazin-block .price-block .price-label {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px; }
+      .sec-magazine-inside .magazin-block .price-block .price {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 41px;
+        color: #FA8B00; }
+      .sec-magazine-inside .magazin-block .price-block .plus-minus {
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 23px;
+        width: 150px;
+        height: 40px;
+        padding: 5px; }
+        .sec-magazine-inside .magazin-block .price-block .plus-minus .tovar-sani {
+          font-size: 16px;
+          font-weight: 600;
+          color: #374759; }
+      .sec-magazine-inside .magazin-block .price-block .plus-minus-btn {
+        background-color: #E0E0E0;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 0px;
+        color: #374759;
+        cursor: pointer; }
+    .sec-magazine-inside .magazin-block .tovar-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 0 25px 10px 25px; }
+    .sec-magazine-inside .magazin-block .tover-pod-title {
+      font-size: 14px;
+      line-height: 19px;
+      color: #3E4958;
+      padding: 0 25px; }
+    .sec-magazine-inside .magazin-block .tovar-btn-block {
+      padding: 25px 25px 30px 25px; }
+      .sec-magazine-inside .magazin-block .tovar-btn-block .vernut-nazad-btn {
+        color: #00458B;
+        border-color: #00458B; }
+      .sec-magazine-inside .magazin-block .tovar-btn-block .zakazat-btn {
+        background-color: #FA8B00;
+        margin-left: 15px;
+        color: #fff; }
+      .sec-magazine-inside .magazin-block .tovar-btn-block .tovar-footer-text {
+        font-size: 14px;
+        line-height: 19px;
+        color: #C4C4C4;
+        margin-top: 20px; }
+  @media (max-width: 767px) {
+    .sec-magazine-inside {
+      padding-top: 30px; }
+      .sec-magazine-inside .breadcrumb-custom {
+        margin-bottom: 40px; }
+      .sec-magazine-inside .magazin-block .magazin-img {
+        margin: 15px;
+        width: calc(100% - 30px); }
+      .sec-magazine-inside .magazin-block .magazin-desc {
+        border-left: 0; }
+      .sec-magazine-inside .magazin-block .magazin-title {
+        padding: 0 20px 20px 20px;
+        font-size: 30px;
+        line-height: 41px; }
+      .sec-magazine-inside .magazin-block .price-block {
+        padding: 34px 20px 40px 20px; }
+      .sec-magazine-inside .magazin-block .tovar-title {
+        padding-left: 20px;
+        padding-right: 20px; }
+      .sec-magazine-inside .magazin-block .tover-pod-title {
+        padding: 0 20px; }
+      .sec-magazine-inside .magazin-block .tovar-btn-block {
+        padding: 34px 20px 30px 20px; }
+        .sec-magazine-inside .magazin-block .tovar-btn-block .green-btn-outline {
+          margin-top: 6px; }
+        .sec-magazine-inside .magazin-block .tovar-btn-block .tovar-footer-text {
+          font-size: 12px; }
+        .sec-magazine-inside .magazin-block .tovar-btn-block .vernut-nazad-btn {
+          margin-right: 6px; }
+        .sec-magazine-inside .magazin-block .tovar-btn-block .zakazat-btn {
+          margin-left: 0; } }

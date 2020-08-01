@@ -1372,3 +1372,152 @@ footer {
     }
   }
 }
+
+/* ----------------------------   SECTION - Magazin Inside ------------------------------- */
+.sec-magazine-inside {
+  padding: 40px 0 120px 0;
+
+  .breadcrumb-custom {
+    background-color: $color-bg;
+    margin-bottom: 43px;
+  }
+  .magazin-block {
+    background: #FFFFFF;
+    border: 0.5px solid #E0E0E0;
+
+    .magazin-img {
+      margin: 20px;
+    }
+    .magazin-desc {
+      border-left: 0.5px solid #E0E0E0;
+      width: 100%;
+    }
+    .magazin-title {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 49px;
+      padding: 20px 25px;
+      border-bottom: 0.5px solid #E0E0E0;
+    }
+    .price-block {
+      padding: 25px;
+      padding-bottom: 50px;
+
+      .price-label {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+      }
+      .price {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 41px;
+        color: $color-orange;
+      }
+      .plus-minus {
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 23px;
+        width: 150px;
+        height: 40px;
+        padding: 5px;
+
+        .tovar-sani {
+          font-size: 16px;
+          font-weight: 600;
+          color: #374759;
+        }
+      }
+      .plus-minus-btn {
+        background-color: #E0E0E0;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 0px;
+        color: #374759;
+        cursor: pointer;
+      }
+    }
+    .tovar-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 0 25px 10px 25px;
+    }
+    .tover-pod-title {
+      font-size: 14px;
+      line-height: 19px;
+      color: #3E4958;
+      padding: 0 25px;
+    }
+
+    .tovar-btn-block {
+      padding: 25px 25px 30px 25px;
+
+      .vernut-nazad-btn {
+        color: $color-main;
+        border-color: $color-main;
+      }
+      .zakazat-btn {
+        background-color: $color-orange;
+        margin-left: 15px;
+        color: #fff;
+      }
+      .tovar-footer-text {
+        font-size: 14px;
+        line-height: 19px;
+        color: #C4C4C4;
+        margin-top: 20px;
+      }
+    }
+  }
+  @media (max-width: $screen-size-medium) {
+    padding-top: 30px;
+
+    .breadcrumb-custom {
+      margin-bottom: 40px;
+    }
+    .magazin-block {
+      .magazin-img {
+        margin: 15px;
+        width: calc(100% - 30px);
+      }
+      .magazin-desc {
+        border-left: 0;
+      }
+      .magazin-title {
+        padding: 0 20px 20px 20px;
+        font-size: 30px;
+        line-height: 41px;
+      }
+      .price-block {
+        padding: 34px 20px 40px 20px;
+      }
+      .tovar-title {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .tover-pod-title {
+        padding: 0 20px;
+      }
+      .tovar-btn-block {
+        padding: 34px 20px 30px 20px;
+
+        .green-btn-outline {
+          margin-top: 6px;
+        }
+        .tovar-footer-text {
+          font-size: 12px;
+        }
+        .vernut-nazad-btn {
+          margin-right: 6px;
+        }
+        .zakazat-btn {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
