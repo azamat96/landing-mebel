@@ -1309,7 +1309,66 @@ footer {
       font-size: 18px;
       font-weight: bold;
     }
+  }
+}
 
+/* ----------------------------   SECTION - Magazin Category ------------------------------- */
+.sec-magazin-category {
+  padding-top: 40px;
+  padding-bottom: 90px;
 
+  .container {
+    padding: 0;
+  }
+  .breadcrumb-custom {
+    background-color: $color-bg;
+  }
+  .row .col-md-3 {
+    padding: 0 13px;
+  }
+  .card {
+    padding: 12px;
+    padding-bottom: 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+    .card-img {
+      width: 100%;
+    }
+    .card-title {
+      margin: 10px 0;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .card-footer {
+      margin-top: 20px;
+      background-color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      p {
+        color: $color-orange;
+        font-size: 24px;
+      }
+    }
+  }
+  @media (max-width: $screen-size-medium) {
+    padding-top: 30px;
+
+    .container {
+      padding: 0 15px;
+    }
+    .breadcrumb-custom {
+      margin-bottom: 40px;
+    }
+    .row .col-md-3 {
+      padding: 0 15px;
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      width: min-content;
+    }
   }
 }
