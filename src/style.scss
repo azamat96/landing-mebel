@@ -1521,3 +1521,67 @@ footer {
     }
   }
 }
+
+/* ----------------------------   SECTION - Contacts   ------------------------------- */
+.sec-contacts {
+  padding: 40px 0 120px 0;
+
+  .breadcrumb-custom {
+    background-color: $color-bg;
+  }
+  .contacts-block {
+    padding: 50px 30px 30px 30px;
+    background: #FFFFFF;
+    border: 0.5px solid #E0E0E0;
+
+    .contact-row {
+      padding-left: 75px;
+      margin-bottom: 35px;
+
+      .c-label {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #3E4958;
+        width: 185px;
+      }
+      .c-info {
+        font-size: 16px;
+        line-height: 22px;
+        color: #3E4958;
+      }
+    }
+  }
+  @media (max-width: $screen-size-medium) {
+    padding: 30px 0 90px 0;
+
+    .breadcrumb-custom {
+      margin-bottom: 45px;
+    }
+    .contacts-block {
+      padding: 0;
+      padding-top: 10px;
+
+      .contact-row {
+        padding: 15px 18px 25px 25px;
+        padding-bottom: 18px;
+        border-bottom: solid 1px #E0E0E0;
+        margin-bottom: 0;
+        flex-direction: column;
+
+        .c-label {
+          width: auto;
+          margin-bottom: 10px;
+        }
+        .c-info {
+          font-size: 14px;
+        }
+      }
+      .c-map {
+        margin-top: 20px;
+        padding: 10px;
+      }
+    }
+
+  }
+}
