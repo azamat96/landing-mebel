@@ -845,6 +845,32 @@ footer {
       margin: 0;
       margin-bottom: 50px; } }
 
+.tovar-btn-block {
+  padding: 25px 25px 30px 25px; }
+  .tovar-btn-block .vernut-nazad-btn {
+    color: #00458B;
+    border-color: #00458B; }
+  .tovar-btn-block .zakazat-btn {
+    background-color: #FA8B00;
+    margin-left: 15px;
+    color: #fff; }
+  .tovar-btn-block .tovar-footer-text {
+    font-size: 14px;
+    line-height: 19px;
+    color: #C4C4C4;
+    margin-top: 20px; }
+  @media (max-width: 767px) {
+    .tovar-btn-block {
+      padding: 34px 20px 30px 20px; }
+      .tovar-btn-block .green-btn-outline {
+        margin-top: 6px; }
+      .tovar-btn-block .tovar-footer-text {
+        font-size: 12px; }
+      .tovar-btn-block .vernut-nazad-btn {
+        margin-right: 6px; }
+      .tovar-btn-block .zakazat-btn {
+        margin-left: 0; } }
+
 /*---------------------------  COMMON STYLES END ------------------------------------------- */
 /* -------------------------   SECTION START - Bud v kurse -------------------------- */
 .sec-bud-v-kurse {
@@ -1169,20 +1195,6 @@ footer {
       line-height: 19px;
       color: #3E4958;
       padding: 0 25px; }
-    .sec-magazine-inside .magazin-block .tovar-btn-block {
-      padding: 25px 25px 30px 25px; }
-      .sec-magazine-inside .magazin-block .tovar-btn-block .vernut-nazad-btn {
-        color: #00458B;
-        border-color: #00458B; }
-      .sec-magazine-inside .magazin-block .tovar-btn-block .zakazat-btn {
-        background-color: #FA8B00;
-        margin-left: 15px;
-        color: #fff; }
-      .sec-magazine-inside .magazin-block .tovar-btn-block .tovar-footer-text {
-        font-size: 14px;
-        line-height: 19px;
-        color: #C4C4C4;
-        margin-top: 20px; }
   @media (max-width: 767px) {
     .sec-magazine-inside {
       padding-top: 30px; }
@@ -1203,17 +1215,7 @@ footer {
         padding-left: 20px;
         padding-right: 20px; }
       .sec-magazine-inside .magazin-block .tover-pod-title {
-        padding: 0 20px; }
-      .sec-magazine-inside .magazin-block .tovar-btn-block {
-        padding: 34px 20px 30px 20px; }
-        .sec-magazine-inside .magazin-block .tovar-btn-block .green-btn-outline {
-          margin-top: 6px; }
-        .sec-magazine-inside .magazin-block .tovar-btn-block .tovar-footer-text {
-          font-size: 12px; }
-        .sec-magazine-inside .magazin-block .tovar-btn-block .vernut-nazad-btn {
-          margin-right: 6px; }
-        .sec-magazine-inside .magazin-block .tovar-btn-block .zakazat-btn {
-          margin-left: 0; } }
+        padding: 0 20px; } }
 
 /* ----------------------------   SECTION - Contacts   ------------------------------- */
 .sec-contacts {
@@ -1259,3 +1261,91 @@ footer {
         .sec-contacts .contacts-block .c-map {
           margin-top: 20px;
           padding: 10px; } }
+
+/* ----------------------------   SECTION - Mebel Inside   ------------------------------- */
+.sec-mebel-inside {
+  padding: 40px 0 60px 0; }
+  .sec-mebel-inside .breadcrumb-custom {
+    margin-bottom: 45px;
+    background-color: #FAFAFA; }
+  .sec-mebel-inside .big-m-inside {
+    background-color: #fff;
+    border: 0.5px solid #E0E0E0; }
+    .sec-mebel-inside .big-m-inside .image-m-inside {
+      padding: 18px 20px; }
+    .sec-mebel-inside .big-m-inside .text-m-inside {
+      border-left: 1px solid #E0E0E0; }
+      .sec-mebel-inside .big-m-inside .text-m-inside .title-m-inside {
+        padding: 20px 25px;
+        font-size: 36px;
+        line-height: 49px;
+        border-bottom: 1px solid #E0E0E0; }
+      .sec-mebel-inside .big-m-inside .text-m-inside .desc-m-inside {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 25px;
+        margin-bottom: 45px; }
+      .sec-mebel-inside .big-m-inside .text-m-inside .price-m-inside {
+        padding: 0 25px 0px 25px;
+        font-size: 30px;
+        line-height: 41px;
+        color: #FA8B00;
+        font-weight: 600; }
+    .sec-mebel-inside .big-m-inside .footer-m-inside {
+      border-top: 1px solid #E0E0E0;
+      padding: 60px 50px 70px; }
+  @media (max-width: 767px) {
+    .sec-mebel-inside {
+      padding: 30px 0 90px 0; }
+      .sec-mebel-inside .breadcrumb-custom {
+        margin-bottom: 40px; }
+      .sec-mebel-inside .big-m-inside .image-m-inside {
+        padding: 10px; }
+        .sec-mebel-inside .big-m-inside .image-m-inside img {
+          width: 100%; }
+      .sec-mebel-inside .big-m-inside .footer-m-inside {
+        border-top: 0;
+        padding: 30px 0 40px; }
+      .sec-mebel-inside .big-m-inside .text-m-inside {
+        border-left: 0; }
+        .sec-mebel-inside .big-m-inside .text-m-inside .title-m-inside {
+          font-size: 30px;
+          line-height: 41px;
+          padding: 5px 20px 30px; }
+        .sec-mebel-inside .big-m-inside .text-m-inside .desc-m-inside {
+          padding: 30px 20px;
+          margin-bottom: 10px; }
+        .sec-mebel-inside .big-m-inside .text-m-inside .price-m-inside {
+          padding: 0 20px 0px 20px; } }
+
+/* ----------------------------   SECTION - Works Slider   ------------------------------- */
+.sec-works-slider {
+  padding: 60px 0 120px 0; }
+  .sec-works-slider .section-header {
+    margin-bottom: 40px; }
+  .sec-works-slider .slider-swipe {
+    position: relative; }
+    .sec-works-slider .slider-swipe .swiper-b-next {
+      position: absolute;
+      top: calc(50% - 18px);
+      z-index: 1;
+      right: -56px; }
+    .sec-works-slider .slider-swipe .swiper-b-prev {
+      position: absolute;
+      top: calc(50% - 18px);
+      z-index: 1;
+      left: -56px; }
+  @media (max-width: 767px) {
+    .sec-works-slider {
+      padding-top: 0; }
+      .sec-works-slider .section-header {
+        font-size: 24px;
+        font-weight: bold; }
+      .sec-works-slider .slider-swipe .swiper-container {
+        width: calc(100% - 110px); }
+        .sec-works-slider .slider-swipe .swiper-container .swiper-slide {
+          text-align: center; }
+      .sec-works-slider .slider-swipe .swiper-b-next {
+        right: 10px; }
+      .sec-works-slider .slider-swipe .swiper-b-prev {
+        left: 10px; } }

@@ -1031,6 +1031,42 @@ footer {
     margin-bottom: 50px;
   }
 }
+
+.tovar-btn-block {
+  padding: 25px 25px 30px 25px;
+
+  .vernut-nazad-btn {
+    color: $color-main;
+    border-color: $color-main;
+  }
+  .zakazat-btn {
+    background-color: $color-orange;
+    margin-left: 15px;
+    color: #fff;
+  }
+  .tovar-footer-text {
+    font-size: 14px;
+    line-height: 19px;
+    color: #C4C4C4;
+    margin-top: 20px;
+  }
+  @media (max-width: $screen-size-medium) {
+    padding: 34px 20px 30px 20px;
+
+    .green-btn-outline {
+      margin-top: 6px;
+    }
+    .tovar-footer-text {
+      font-size: 12px;
+    }
+    .vernut-nazad-btn {
+      margin-right: 6px;
+    }
+    .zakazat-btn {
+      margin-left: 0;
+    }
+  }
+}
 /*---------------------------  COMMON STYLES END ------------------------------------------- */
 
 
@@ -1452,26 +1488,6 @@ footer {
       color: #3E4958;
       padding: 0 25px;
     }
-
-    .tovar-btn-block {
-      padding: 25px 25px 30px 25px;
-
-      .vernut-nazad-btn {
-        color: $color-main;
-        border-color: $color-main;
-      }
-      .zakazat-btn {
-        background-color: $color-orange;
-        margin-left: 15px;
-        color: #fff;
-      }
-      .tovar-footer-text {
-        font-size: 14px;
-        line-height: 19px;
-        color: #C4C4C4;
-        margin-top: 20px;
-      }
-    }
   }
   @media (max-width: $screen-size-medium) {
     padding-top: 30px;
@@ -1501,22 +1517,6 @@ footer {
       }
       .tover-pod-title {
         padding: 0 20px;
-      }
-      .tovar-btn-block {
-        padding: 34px 20px 30px 20px;
-
-        .green-btn-outline {
-          margin-top: 6px;
-        }
-        .tovar-footer-text {
-          font-size: 12px;
-        }
-        .vernut-nazad-btn {
-          margin-right: 6px;
-        }
-        .zakazat-btn {
-          margin-left: 0;
-        }
       }
     }
   }
@@ -1582,6 +1582,132 @@ footer {
         padding: 10px;
       }
     }
+  }
+}
 
+/* ----------------------------   SECTION - Mebel Inside   ------------------------------- */
+.sec-mebel-inside {
+  padding: 40px 0 60px 0;
+
+  .breadcrumb-custom {
+    margin-bottom: 45px;
+    background-color: $color-bg;
+  }
+  .big-m-inside {
+    background-color: #fff;
+    border: 0.5px solid #E0E0E0;
+
+    .image-m-inside {
+      padding: 18px 20px;
+    }
+    .text-m-inside {
+      border-left: 1px solid #E0E0E0;
+
+      .title-m-inside {
+        padding: 20px 25px;
+        font-size: 36px;
+        line-height: 49px;
+        border-bottom: 1px solid #E0E0E0;
+      }
+      .desc-m-inside {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 25px;
+        margin-bottom: 45px;
+      }
+      .price-m-inside {
+        padding: 0 25px 0px 25px;
+        font-size: 30px;
+        line-height: 41px;
+        color: $color-orange;
+        font-weight: 600;
+      }
+    }
+    .footer-m-inside {
+      border-top: 1px solid #E0E0E0;
+      padding: 60px 50px 70px;
+    }
+  }
+  @media (max-width: $screen-size-medium) {
+    padding: 30px 0 90px 0;
+
+    .breadcrumb-custom {
+      margin-bottom: 40px;
+    }
+    .big-m-inside {
+      .image-m-inside {
+        padding: 10px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .footer-m-inside {
+        border-top: 0;
+        padding: 30px 0 40px;
+      }
+      .text-m-inside {
+        border-left: 0;
+
+        .title-m-inside {
+          font-size: 30px;
+          line-height: 41px;
+          padding: 5px 20px 30px;
+        }
+        .desc-m-inside {
+          padding: 30px 20px;
+          margin-bottom: 10px;
+        }
+        .price-m-inside {
+          padding: 0 20px 0px 20px;
+        }
+      }
+    }
+  }
+}
+
+/* ----------------------------   SECTION - Works Slider   ------------------------------- */
+.sec-works-slider {
+  padding: 60px 0 120px 0;
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+  .slider-swipe {
+    position: relative;
+    .swiper-b-next {
+      position: absolute;
+      top: calc(50% - 18px);
+      z-index: 1;
+      right: -56px;
+    }
+    .swiper-b-prev {
+      position: absolute;
+      top: calc(50% - 18px);
+      z-index: 1;
+      left: -56px;
+    }
+  }
+  @media (max-width: $screen-size-medium) {
+    padding-top: 0;
+
+    .section-header {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .slider-swipe {
+      .swiper-container {
+        width: calc(100% - 110px);
+        .swiper-slide {
+          text-align: center;
+        }
+      }
+      .swiper-b-next {
+        right: 10px;
+      }
+      .swiper-b-prev {
+        left: 10px;
+      }
+    }
   }
 }
