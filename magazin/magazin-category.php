@@ -12,6 +12,8 @@
 </head>
 <body>
 
+<?php include '../layouts/header.php'; ?>
+
 <div class="sec-magazin-category">
     <div class="container">
         <nav aria-label="breadcrumb">
@@ -251,6 +253,8 @@
 
     </div>
 </div>
+
+<?php include '../layouts/footer.php'; ?>
 
 </body>
 </html>

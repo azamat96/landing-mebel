@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+<?php include '../layouts/header.php'; ?>
+
 <div class="sec-mebel-inside">
     <div class="container">
         <nav aria-label="breadcrumb">
@@ -99,6 +101,8 @@
         </div>
     </div>
 </div>
+
+<?php include '../layouts/footer.php'; ?>
 
 <!-- Initialize Swiper -->
 <script>

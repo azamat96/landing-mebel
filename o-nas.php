@@ -12,6 +12,8 @@
 </head>
 <body>
 
+<?php include './layouts/header.php'; ?>
+
 <div class="sec-too-llc">
     <div class="container">
         <h2 class="section-header">ТОО  "ПРЕСТИЖ  ЛЛС"</h2>
@@ -83,6 +85,7 @@
     </div>
 </div>
 
+<?php include './layouts/footer.php'; ?>
 
 </body>
 </html>

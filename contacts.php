@@ -12,6 +12,8 @@
 </head>
 <body>
 
+<?php include './layouts/header.php'; ?>
+
 <div class="sec-contacts">
     <div class="container">
         <nav aria-label="breadcrumb">
@@ -45,6 +47,8 @@
         </div>
     </div>
 </div>
+
+<?php include './layouts/footer.php'; ?>
 
 </body>
 </html>
