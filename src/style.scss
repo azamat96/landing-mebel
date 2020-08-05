@@ -756,7 +756,7 @@ header {
   height: 1px;
   width: 100%;
   margin-bottom: 30px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -1210,7 +1210,7 @@ footer {
     cursor: pointer;
   }
   .prev-btn {
-    background-color: #fff;
+    background-color: $color-main;;
     margin-right: 12px;
   }
   .next-btn {

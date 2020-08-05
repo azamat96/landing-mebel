@@ -19,18 +19,17 @@
                     <img src="../src/images/big-logo.png" alt="" class="logo">
                 </div>
                 <div>
-                    <a href="/" class="active">Главная</a>
-                    <!--                    <div class="dropdown">-->
-                    <!--                        <a class="dropbtn">Товары и услуги</a>-->
-                    <!--                        <div class="dropdown-content">-->
-                    <!--                            <a href="/iss-gazon.html">Искусственный газон</a>-->
-                    <!--                            <a href="/sport-areas.html">Строительство спортивных площадок</a>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                    <a href="/magazin/magazin.php">Магазин</a>
-                    <a href="/mebel/mebel-na-zakaz.php">Мебель на заказ</a>
-                    <a href="/o-nas.php">О нас</a>
-                    <a href="/contacts.php">Контакты</a>
+
+                    <?php
+//                    $uri = explode( '/', $_SERVER['REQUEST_URI'])[0];
+                    $uri = $_SERVER['REQUEST_URI'];
+                    $routes = require '../config/routes.php';
+                    foreach ($routes as $route => $value) {
+                        $activeClass = $uri === '/'.$value['file_location'] ? "class='active'" : "";
+                        echo "<a href='/{$value['file_location']}' {$activeClass}>{$value['name']}</a>";
+                    }
+                    ?>
+
                 </div>
                 <div class="right-side">
                     <button class="green-btn-outline" type="button" data-toggle="modal" data-target="#zayavkaModal">Оставить заявку</button>
@@ -45,11 +44,17 @@
                     <img src="../src/images/close-icon.svg" alt="" class="closebtn" onclick="closeNav()">
                     <div class="overlay-content">
                         <p class="mob-menu-logo">luxurymebel</p>
-                        <a href="/" class="active">Главная</a>
-                        <a href="/magazin/magazin.php">Магазин</a>
-                        <a href="/mebel/mebel-na-zakaz.php">Мебель на заказ</a>
-                        <a href="/o-nas.php">О нас</a>
-                        <a href="/contacts.php">Контакты</a>
+
+                        <?php
+                        //                    $uri = explode( '/', $_SERVER['REQUEST_URI'])[0];
+                        $uri = $_SERVER['REQUEST_URI'];
+                        $routes = require '../config/routes.php';
+                        foreach ($routes as $route => $value) {
+                            $activeClass = $uri === '/'.$value['file_location'] ? "class='active'" : "";
+                            echo "<a href='/{$value['file_location']}' {$activeClass}>{$value['name']}</a>";
+                        }
+                        ?>
+
                         <div class="border-line"></div>
                         <a href="">+7 777 229 88 89</a>
                         <a href="">+7 747 981 98 62</a>
@@ -105,4 +110,11 @@
             document.getElementById("myNav").style.width = "0%";
         }
     </script>
+    <!--                    <div class="dropdown">-->
+    <!--                        <a class="dropbtn">Товары и услуги</a>-->
+    <!--                        <div class="dropdown-content">-->
+    <!--                            <a href="/iss-gazon.html">Искусственный газон</a>-->
+    <!--                            <a href="/sport-areas.html">Строительство спортивных площадок</a>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
 </header>

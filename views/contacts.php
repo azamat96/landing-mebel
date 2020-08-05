@@ -5,14 +5,14 @@
     <title>Контакты</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/style.css">
-    <script src="./src/js/jquery.min.js"></script>
-    <script src="./src/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <script src="../src/js/jquery.min.js"></script>
+    <script src="../src/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<?php include './layouts/header.php'; ?>
+<?php include '../layouts/header.php'; ?>
 
 <div class="sec-contacts">
     <div class="container">
@@ -48,7 +48,7 @@
     </div>
 </div>
 
-<?php include './layouts/footer.php'; ?>
+<?php include '../layouts/footer.php'; ?>
 
 </body>
 </html>

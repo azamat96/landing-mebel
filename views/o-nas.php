@@ -5,14 +5,14 @@
     <title>О нас</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/style.css">
-    <script src="src/js/jquery.min.js"></script>
-    <script src="src/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <script src="../src/js/jquery.min.js"></script>
+    <script src="../src/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<?php include './layouts/header.php'; ?>
+<?php include '../layouts/header.php'; ?>
 
 <div class="sec-too-llc">
     <div class="container">
@@ -50,34 +50,34 @@
         <h3 class="section-header">Для Вашего удобства</h3>
         <div class="d-flex justify-content-center pb-lg-5 flex-column flex-md-row align-items-center align-items-md-baseline">
             <div class="reason">
-                <img src="src/images/phone1.png">
+                <img src="../src/images/phone1.png">
                 <p>Консультация с менеджером по телефону</p>
             </div>
             <div class="reason">
-                <img src="src/images/customer1.png">
+                <img src="../src/images/customer1.png">
                 <p>Индивидуальная
                     разработка
                     дизайн проекта</p>
             </div>
             <div class="reason">
-                <img src="src/images/fees1.png">
+                <img src="../src/images/fees1.png">
                 <p>Составление
                     сметы</p>
             </div>
         </div>
         <div class="d-flex justify-content-center pt-lg-3 flex-column flex-md-row align-items-center align-items-md-baseline">
             <div class="reason">
-                <img src="src/images/stopwatch1.png">
+                <img src="../src/images/stopwatch1.png">
                 <p>Утверждение
                     сроков</p>
             </div>
             <div class="reason">
-                <img src="src/images/meter1.png">
+                <img src="../src/images/meter1.png">
                 <p>Контрольный
                     замер</p>
             </div>
             <div class="reason">
-                <img src="src/images/maintenance-2.png">
+                <img src="../src/images/maintenance-2.png">
                 <p>Доставка сборка
                     установка под ключ</p>
             </div>
@@ -85,7 +85,7 @@
     </div>
 </div>
 
-<?php include './layouts/footer.php'; ?>
+<?php include '../layouts/footer.php'; ?>
 
 </body>
 </html>
