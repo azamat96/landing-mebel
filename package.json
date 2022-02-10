@@ -4,6 +4,6 @@
     "watch-sass": "node-sass -w src/style.scss src/style.css"
   },
   "devDependencies": {
-    "node-sass": "4.14.1"
+    "node-sass": "7.0.0"
   }
 }
